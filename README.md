@@ -51,6 +51,4 @@ When you hit the API controller, you will see an output like the following:
 
 Analyzing the output, you can observe how the DI container adheres to the defined life cycle for each service type. Understanding these life cycle behaviors is crucial for designing and optimizing applications that effectively manage resources and performance.
 
-## License
 
-This project is licensed under the MIT License. See the `LICENSE.md` file for details.
