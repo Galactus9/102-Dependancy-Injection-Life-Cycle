@@ -39,7 +39,8 @@ When you hit the API controller, you will see an output like the following:
 2 Scoped Services:
 
 - Scoped services are created once per HTTP request and are reused within the same request context.
-- In this output, both _scopedService1 and _scopedService2 share the same GUID, indicating that they are the same instance, created once for the current HTTP request. This behavior helps reduce unnecessary object creation - and promotes better performance within a single request.
+- In this output, both _scopedService1 and _scopedService2 share the same GUID, indicating that they are the same instance, created once for the current HTTP request.
+- This behavior helps reduce unnecessary object creation - and promotes better performance within a single request.
 
 3 Singleton Services:
 
