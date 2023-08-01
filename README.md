@@ -46,6 +46,8 @@ When you hit the API controller, you will see an output like the following:
 - Singleton services are created only once throughout the lifetime of the application and are reused across all requests.
 - Both _singletonService1 and _singletonService2 share the same GUID, demonstrating that they represent the same instance created at the application startup.
 - Singleton services are useful when you need to share stateful objects across multiple parts of the application, such as configuration settings or data that should remain consistent.
+
+
 Analyzing the output, you can observe how the DI container adheres to the defined life cycle for each service type. Understanding these life cycle behaviors is crucial for designing and optimizing applications that effectively manage resources and performance.
 
 ## License
