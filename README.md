@@ -33,19 +33,16 @@ When you hit the API controller, you will see an output like the following:
 
 1 Transient Services:
 
-- _transientService1 and _transientService2 are both registered as Transient services.
 - Transient services are created anew every time they are requested, which is evident from the different unique identifiers (GUIDs) for each service instance.
 - This behavior ensures that each service instance operates independently and does not retain any state across different parts of the application.
 
 2 Scoped Services:
 
-_scopedService1 and _scopedService2 are both registered as Scoped services.
 - Scoped services are created once per HTTP request and are reused within the same request context.
 - In this output, both _scopedService1 and _scopedService2 share the same GUID, indicating that they are the same instance, created once for the current HTTP request. This behavior helps reduce unnecessary object creation - and promotes better performance within a single request.
 
 3 Singleton Services:
 
-- _singletonService1 and _singletonService2 are both registered as Singleton services.
 - Singleton services are created only once throughout the lifetime of the application and are reused across all requests.
 - Both _singletonService1 and _singletonService2 share the same GUID, demonstrating that they represent the same instance created at the application startup.
 - Singleton services are useful when you need to share stateful objects across multiple parts of the application, such as configuration settings or data that should remain consistent.
